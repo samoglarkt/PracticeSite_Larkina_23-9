@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>EduPlatform — Главная</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page-wrap">
+    <header class="site-header">
+        <div class="container header-inner">
+        <div class="logo">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="6" width="20" height="12" rx="2" fill="#6B46FF"/>
+            <path d="M7 9l5 3 5-3" stroke="#fff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+            <span class="brand">EduPlatform</span>
+        </div>
+
+        <nav class="main-nav">
+            <a href="#">Главная</a>
+            <a href="#">О школе</a>
+            <a href="#">Курсы</a>
+            <a href="#">Преподаватели</a>
+            <a href="#">Контакты</a>
+        </nav>
+
+        <div class="header-actions">
+            <a class="login" href="#">Войти</a>
+            <a class="btn btn-primary" href="#">Регистрация</a>
+            <button class="burger" aria-label="menu" id="burger">
+            <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+    </header>
+
+    <main class="hero container">
+    <section class="hero-left">
+        <div class="pill">Новая платформа для онлайн‑обучения</div>
+
+        <h1 class="hero-title">
+            Развивайте навыки
+            <span class="accent">с лучшими</span>
+            преподавателями
+        </h1>
+
+        <p class="hero-desc">
+            Более 150 курсов по программированию, дизайну, маркетингу и бизнесу.
+            Учитесь в удобном темпе с поддержкой экспертов.
+        </p>
+
+        <div class="hero-ctas">
+            <a class="btn btn-primary large" href="#">Начать обучение</a>
+            <button class="btn btn-outline" id="playDemo">Смотреть демо</button>
+        </div>
+
+        <ul class="stats">
+            <li><strong>15K+</strong><span>Студентов</span></li>
+            <li><strong>150+</strong><span>Курсов</span></li>
+            <li><strong>98%</strong><span>Удовлетворены</span></li>
+        </ul>
+    </section>
+
+    <section class="hero-right">
+        <div class="hero-card" id="heroCard">
+            <img src="img/woman.svg"></img>
+
+        <div class="floating top" id="badgeTop">
+            <div class="icon">🏆</div>
+            <div>
+                <div class="ftitle">100+ сертификатов</div>
+                <div class="fsub">выдано</div>
+            </div>
+        </div>
+
+        <div class="floating bottom" id="badgeBottom">
+            <div class="icon">⭐️</div>
+            <div>
+                <div class="ftitle">4.9 рейтинг</div>
+                <div class="fsub">от студентов</div>
+            </div>
+            </div>
+        </div>
+        </section>
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
