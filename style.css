@@ -42,12 +42,10 @@ body{
     padding:18px 0;
 }
 
-/* logo */
 .logo{display:flex;align-items:center;gap:12px;font-weight:700;color:var(--purple)}
 .logo svg{border-radius:6px}
 .brand{font-size:18px}
 
-/* nav */
 .main-nav{display:flex;gap:20px;align-items:center}
 .main-nav a{
     color:#6b6b6b;
@@ -301,7 +299,7 @@ body{
 
 .about-text-small {
     font-size: 16px;
-  color: #374151; /* Немного темнее, чем muted */
+    color: #374151;
     margin-bottom: 18px;
 }
 
@@ -393,3 +391,123 @@ body{
 }
 }
 
+
+.why-choose-us {
+    text-align: center;
+    padding: 80px 0; 
+}
+
+.why-choose-us h2 {
+    font-size: 38px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.why-choose-us .subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 60px;
+    line-height: 1.5;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px; 
+    text-align: left; 
+}
+
+.feature-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card .icon-wrapper {
+    width: 60px;
+    height: 60px;
+    background-color: #f0ebf8;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.feature-card .icon-wrapper span {
+    font-size: 30px;
+}
+
+.feature-card h3 {
+    font-size: 22px;
+    font-weight: 600; 
+    color: #1a1a1a;
+    margin-bottom: 12px; 
+}
+
+.feature-card p {
+    font-size: 15px;
+    color: #555; 
+    line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .why-choose-us h2 {
+        font-size: 32px;
+    }
+    .why-choose-us .subtitle {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 768px) {
+    .why-choose-us {
+        padding: 50px 0;
+    }
+    .why-choose-us h2 {
+        font-size: 28px;
+    }
+    .why-choose-us .subtitle {
+        font-size: 15px;
+        margin-bottom: 40px;
+    }
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    .feature-card {
+        padding: 25px;
+    }
+    .feature-card .icon-wrapper {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+    .feature-card .icon-wrapper span {
+        font-size: 25px;
+    }
+    .feature-card h3 {
+        font-size: 20px;
+    }
+    .feature-card p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .why-choose-us h2 {
+        font-size: 24px;
+    }
+    .why-choose-us .subtitle {
+        font-size: 14px;
+    }
+}
